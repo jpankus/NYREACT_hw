@@ -20,7 +20,7 @@ var Main = React.createClass({
 
 					<div className="jumbotron">
 						<h1>NY Times Article Scrubber</h1>
-						<p><em>Search for and annotate articles of interest!</em></p>
+						<p><em>Search for and note articles!</em></p>
 						<a href="#/search"><button className="btn btn-default">Search</button></a>						<a href="#/saved"><button className="btn btn-default">Saved Articles</button></a>
 					</div>
 					<div className="row">
@@ -29,7 +29,7 @@ var Main = React.createClass({
 						</div>
 					</div>
 					<div className="container">
-						{/*Added this.props.children to dump all of the child components into place*/}
+						{ }
 						{this.props.children}
 					</div>
 				</div>

@@ -1,6 +1,6 @@
 var React = require('react');
 
-// require helper methods to run queries and requests.
+// require to run queries and requests.
 var helpers = require('../utils/helpers.js')
 
 var Search = React.createClass({

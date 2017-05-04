@@ -35,8 +35,8 @@ app.post('/api/search', function(req, res){
 	  qs: {
 	    'api-key': "51e97822ecd646c0b8a6b7f0999fd3e6",
 	    'q': req.body.term,
-	    'begin_date': "20160710",
-	    'end_date': "20160808"
+	    'begin_date': "20170501",
+	    'end_date': "20170808"
 	  },
 	}, function(err, response, body) {
 		console.log(JSON.parse(body.response.docs[0]));
