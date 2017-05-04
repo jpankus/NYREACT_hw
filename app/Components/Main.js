@@ -1,48 +1,41 @@
+// Include React 
 var React = require('react');
-var Router = require('react-router')
+
+// Included all of the React Router dependencies
+var ReactRouter = require('react-router');
+var Router = ReactRouter.Router;
+var Route = ReactRouter.Route;
+var IndexRoute = ReactRouter.IndexRoute;
 
 var Main = React.createClass({
 
-  render: function(){
+	// Here we render the component
+	render: function(){
 
-    return(
+		return(
 
-      <div className="main-container">
+			<div className="container">
 
+				<div className="row">
 
-        <div className="container">
-
-          <nav className="navbar navbar-default" role="navigation">
-            <div className="container-fluid">
-              <div className="navbar-header">
-                <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                  <span className="sr-only">Toggle navigation</span>
-                  <span className="icon-bar"></span>
-                  <span className="icon-bar"></span>
-                  <span className="icon-bar"></span>
-                </button>
-                <a className="navbar-brand" href="#">NYT-React</a>
-              </div>
-
-              <div className="collapse navbar-collapse navbar-ex1-collapse">
-                <ul className="nav navbar-nav navbar-right">
-                  <li><a href="#/search">Search</a></li>
-                  <li><a href="#/saved">Saved Articles</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-
-          <div className="jumbotron">
-            <h2 className="text-center"><strong>New York Times Article Scrubber</strong></h2>
-          </div>
-
-          {this.props.children}
-
-        </div>
-      </div>
-    )
-  }
+					<div className="jumbotron">
+						<h1>NY Times Article Scrubber</h1>
+						<p><em>Search for and annotate articles of interest!</em></p>
+						<a href="#/search"><button className="btn btn-default">Search</button></a>						<a href="#/saved"><button className="btn btn-default">Saved Articles</button></a>
+					</div>
+					<div className="row">
+						<div className="text-center">
+							
+						</div>
+					</div>
+					<div className="container">
+						{/*Added this.props.children to dump all of the child components into place*/}
+						{this.props.children}
+					</div>
+				</div>
+			</div>
+		)
+	}
 });
-
+// Export the component back for use in other files
 module.exports = Main;

@@ -1,0 +1,23 @@
+{
+  "name": "nyreacthw",
+  "version": "1.0.0",
+  "description": "Week of 19 HW: NYT React Search",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Jessica",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongojs": "^2.4.0",
+    "morgan": "^1.8.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router": "^4.1.1",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {}
+}

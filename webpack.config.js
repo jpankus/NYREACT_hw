@@ -1,7 +1,7 @@
 module.exports = {
-
-  // This code will be compiled
-  entry: "./app/app.js",
+  
+  // This code will be compiled 
+  entry: "./app/App.js",
 
   // Then output into this file
   output: {
@@ -13,13 +13,14 @@ module.exports = {
     loaders: [
       {
         test: /\.jsx?$/,
-        excluse: /(node_modules|bower_components)/,
+        exclude: /(node_modules|bower_components)/,
         loader: 'babel',
         query: {
-          // These are the specific transformations we'll be using.
+          // These are the specific transformations we'll be using. 
           presets: ['react', 'es2015']
         }
       }
     ]
   }
+
 }
